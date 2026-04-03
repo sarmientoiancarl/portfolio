@@ -37,3 +37,6 @@ Things to do:
    - Educational Background
    - Citizenship
    - Internship
+
+• Hero Section
+   - Change profile photo
