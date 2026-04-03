@@ -1,0 +1,9 @@
+Website URL: https://sarmientoiancarl.github.io/sarmientoiancarl.portfolio/
+
+
+When updating
+
+git add .
+git commit -m "Update portfolio"
+git push
+
