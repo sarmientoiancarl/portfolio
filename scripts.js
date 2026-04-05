@@ -108,3 +108,30 @@
     if (e.key === 'Escape') closeAll();
   });
 })();
+
+/* ===================== BURGER MENU ===================== */
+(function () {
+  const burger     = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+  if (!burger || !mobileMenu) return;
+
+  function toggleMenu(force) {
+    const isOpen = force !== undefined ? force : !burger.classList.contains('open');
+    burger.classList.toggle('open', isOpen);
+    mobileMenu.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  burger.addEventListener('click', () => toggleMenu());
+
+  // Close when a link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
+  });
+
+  // Close on resize back to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) toggleMenu(false);
+  });
+})();
