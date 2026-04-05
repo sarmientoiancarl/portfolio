@@ -829,3 +829,11 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
 }
 .testimonial-name { font-size: 13px; font-weight: 500; color: var(--text); }
 .testimonial-role { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+/* ===================== CAROUSEL BUTTON CLICK ANIMATION ===================== */
+.carousel-btn:active {
+  transform: scale(0.88);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  color: var(--accent-text);
+  transition: transform 0.1s ease, background 0.1s, border-color 0.1s;
+}

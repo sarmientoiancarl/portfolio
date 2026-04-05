@@ -1,19 +1,11 @@
 
 Website URL: https://sarmientoiancarl.github.io/portfolio/
 
-
-When updating
-
-git add .
-git commit -m " "
-git push
-
-
 Things to do:
 
-- On the navigation bar, when directing to a section in the index, add a scroll animation instead of just jumping on the section immediately
+- On desktop mode, add animation after clicking the back to top button and navigation button in my works section
 
-- On desktop mode, add animation for the back to top button, navigation button in my works section,
+- Change the navicon for all pages
 
 - Add a Services section that clearly lists what you offer as a freelancer with a brief description and a starting price or "Let's talk" CTA per service
 

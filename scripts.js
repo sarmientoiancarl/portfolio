@@ -148,3 +148,17 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 })();
+/* ===================== SMOOTH SCROLL (cross-page anchor) ===================== */
+(function () {
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (!target) return;
+    // Briefly push back to top, then scroll smoothly to target
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+})();
