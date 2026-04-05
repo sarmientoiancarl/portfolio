@@ -123,11 +123,72 @@ nav {
 .theme-toggle svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.5; }
 
 /* ===================== HERO (index) ===================== */
+
+/* Animated orb keyframes */
+@keyframes orb-drift-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(40px, -30px) scale(1.08); }
+  66%  { transform: translate(-20px, 20px) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes orb-drift-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(-35px, 25px) scale(0.94); }
+  66%  { transform: translate(25px, -20px) scale(1.06); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes orb-drift-3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(20px, 30px) scale(1.04); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
 #hero {
   min-height: 100svh;
   display: flex; align-items: center;
   padding-top: 80px;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Orb layer — sits behind all content */
+#hero .hero-orbs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+#hero .hero-orbs span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+/* Orb 1 — neon blue, top-left */
+#hero .hero-orbs span:nth-child(1) {
+  width: 480px; height: 480px;
+  top: -80px; left: -100px;
+  background: radial-gradient(circle, rgba(41,121,255,0.13) 0%, transparent 70%);
+  animation: orb-drift-1 18s ease-in-out infinite;
+}
+/* Orb 2 — neon blue lighter, bottom-right */
+#hero .hero-orbs span:nth-child(2) {
+  width: 420px; height: 420px;
+  bottom: -60px; right: -80px;
+  background: radial-gradient(circle, rgba(77,159,255,0.10) 0%, transparent 70%);
+  animation: orb-drift-2 22s ease-in-out infinite;
+}
+/* Orb 3 — very faint, center */
+#hero .hero-orbs span:nth-child(3) {
+  width: 300px; height: 300px;
+  top: 40%; left: 40%;
+  background: radial-gradient(circle, rgba(41,121,255,0.06) 0%, transparent 70%);
+  animation: orb-drift-3 26s ease-in-out infinite;
+}
+
+/* Ensure hero content sits above orbs */
+#hero .container { position: relative; z-index: 1; }
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr auto;
