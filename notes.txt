@@ -11,32 +11,16 @@ git push
 
 Things to do:
 
-• Add Workshops Completed
-   - Homepage section
-   - Cards
+- Add a subtle animated gradient or noise texture to the hero background to give it more depth
 
-• Revise My Works
-   - Section
-   - Page
-   - Thumbnails, Titles, Descriptions
-   - For the "view details" button in each card
-     on the page, create a modal that would show
-     5 more images
+- Add a "Back to top" button that appears after scrolling down a certain distance
 
-• Edit contents on everything to add:
-   - Skills
-      - Funnel Creation and Automation
+- Add a Testimonials section
 
-• Info page
-   - Name
-   - Email
-   - Address
-   - Birthday
-   - Age
-   - Sex
-   - Educational Background
-   - Citizenship
-   - Internship
+- Add a Services section that clearly lists what you offer as a freelancer with a brief description and a starting price or "Let's talk" CTA per service
 
-• Hero Section
-   - Change profile photo
+- Add a contact form directly on the homepage instead of just an email link — lower friction for potential clients
+
+- Add copy to clipboard on your email and phone number in the Contact section
+
+- Make the modal image galleries on works.html navigable with left/right arrows instead of showing all 5 at once
