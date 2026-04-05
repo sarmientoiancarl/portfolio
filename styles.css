@@ -124,7 +124,6 @@ nav {
 
 /* ===================== HERO (index) ===================== */
 
-/* Animated orb keyframes */
 @keyframes orb-drift-1 {
   0%   { transform: translate(0, 0) scale(1); }
   33%  { transform: translate(40px, -30px) scale(1.08); }
@@ -151,7 +150,6 @@ nav {
   overflow: hidden;
 }
 
-/* Orb layer — sits behind all content */
 #hero .hero-orbs {
   position: absolute;
   inset: 0;
@@ -172,7 +170,7 @@ nav {
   background: radial-gradient(circle, rgba(41,121,255,0.13) 0%, transparent 70%);
   animation: orb-drift-1 18s ease-in-out infinite;
 }
-/* Orb 2 — neon blue lighter, bottom-right */
+/* Orb 2 — lighter blue, bottom-right */
 #hero .hero-orbs span:nth-child(2) {
   width: 420px; height: 420px;
   bottom: -60px; right: -80px;
@@ -739,4 +737,43 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
   .info-row.full { grid-column: span 1; }
   .modal-images { grid-template-columns: repeat(2, 1fr); }
   .modal-images .modal-img-wrap:first-child { grid-column: span 2; }
+}
+/* ===================== BACK TO TOP ===================== */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 150;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid var(--border);
+  background: var(--bg-2);
+  color: var(--text-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease,
+              background 0.2s, border-color 0.2s, color 0.2s;
+}
+.back-to-top:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
 }

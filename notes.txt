@@ -11,10 +11,6 @@ git push
 
 Things to do:
 
-- Add a subtle animated gradient or noise texture to the hero background to give it more depth
-
-- Add a "Back to top" button that appears after scrolling down a certain distance
-
 - Add a Testimonials section
 
 - Add a Services section that clearly lists what you offer as a freelancer with a brief description and a starting price or "Let's talk" CTA per service
