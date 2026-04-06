@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services &mdash; Ian Carl Sarmiento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230F0F0F'/><path d='M44 18L24 26H18a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2l3 10h4l-2-10h1l20 8V18z' fill='%234D9FFF'/><circle cx='46' cy='32' r='3' fill='%234D9FFF' opacity='0.5'/></svg>">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Ian Carl.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a class="btn-cv" href="assets/Sarmiento_Ian_Carl_-_CV.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="12" x2="12" y2="18"/><polyline points="9 15 12 18 15 15"/></svg> View CV
+        </a>
+        <button class="burger" id="burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg id="iconSun" viewBox="0 0 24 24" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="iconMoon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="index.html#testimonials">Testimonials</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-bottom">
+      <a class="btn-cv" href="assets/Sarmiento_Ian_Carl_-_CV.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="12" x2="12" y2="18"/><polyline points="9 15 12 18 15 15"/></svg> View CV
+      </a>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <div class="fade-up">
+          <a href="index.html" class="back-link">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+            Back to home
+          </a>
+          <p class="section-label" style="margin-top:1.25rem;">Freelance</p>
+          <h1 class="serif">Services I <em>Offer</em></h1>
+        </div>
+        <p class="page-header-desc fade-up" style="transition-delay:0.1s">
+          Flexible, reliable, and results-driven. Whether you need ongoing support or a one-time project, I&rsquo;ve got you covered.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES GRID -->
+  <section class="services-page-section">
+    <div class="container">
+      <div class="services-page-grid">
+
+        <!-- Social Media Management -->
+        <div class="service-page-card fade-up" id="smm" style="transition-delay:0.05s">
+          <div class="service-page-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </div>
+          <div class="service-page-title">Social Media Management</div>
+          <div class="service-page-desc">Keep your brand active, consistent, and engaging across all major platforms. I handle the day-to-day so you don&rsquo;t have to.</div>
+          <div class="service-page-includes">
+            <span>Daily content publishing</span>
+            <span>Comment &amp; message management</span>
+            <span>Community engagement &amp; group sharing</span>
+            <span>Platform monitoring &amp; reporting</span>
+          </div>
+          <div class="service-page-footer">
+            <a class="service-page-cta" href="ma&#105;lto&#58;sarmiento.iancarl20&#64;gmail.com?subject=Inquiry: Social Media Management">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Let&rsquo;s talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Content Design -->
+        <div class="service-page-card fade-up" id="content" style="transition-delay:0.10s">
+          <div class="service-page-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          <div class="service-page-title">Content Design &amp; Graphics</div>
+          <div class="service-page-desc">Visually compelling graphics and reusable templates that reflect your brand identity and elevate your online presence.</div>
+          <div class="service-page-includes">
+            <span>Social media graphics &amp; banners</span>
+            <span>Branded template creation</span>
+            <span>Short-form video editing (Reels/TikTok)</span>
+            <span>Content scheduling &amp; workflow setup</span>
+          </div>
+          <div class="service-page-footer">
+            <a class="service-page-cta" href="ma&#105;lto&#58;sarmiento.iancarl20&#64;gmail.com?subject=Inquiry: Content Design & Graphics">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Let&rsquo;s talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Administrative Support -->
+        <div class="service-page-card fade-up" id="admin" style="transition-delay:0.10s">
+          <div class="service-page-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="service-page-title">Administrative Support</div>
+          <div class="service-page-desc">Efficient back-office support to keep your operations running smoothly — organized, on time, and stress-free.</div>
+          <div class="service-page-includes">
+            <span>Calendar &amp; schedule management</span>
+            <span>Email handling &amp; inbox organization</span>
+            <span>File &amp; data management</span>
+            <span>Google Workspace optimization</span>
+          </div>
+          <div class="service-page-footer">
+            <a class="service-page-cta" href="ma&#105;lto&#58;sarmiento.iancarl20&#64;gmail.com?subject=Inquiry: Administrative Support">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Let&rsquo;s talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Funnel Creation -->
+        <div class="service-page-card fade-up" id="funnel" style="transition-delay:0.15s">
+          <div class="service-page-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg>
+          </div>
+          <div class="service-page-title">Funnel Creation &amp; Automation</div>
+          <div class="service-page-desc">Build high-converting marketing funnels with automated follow-up sequences that turn leads into loyal customers.</div>
+          <div class="service-page-includes">
+            <span>Landing page design &amp; setup</span>
+            <span>Automated email/SMS sequences</span>
+            <span>CRM pipeline configuration</span>
+            <span>GoHighLevel / ClickFunnels setup</span>
+          </div>
+          <div class="service-page-footer">
+            <a class="service-page-cta" href="ma&#105;lto&#58;sarmiento.iancarl20&#64;gmail.com?subject=Inquiry: Funnel Creation & Automation">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Let&rsquo;s talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Email Marketing -->
+        <div class="service-page-card fade-up" id="email" style="transition-delay:0.15s">
+          <div class="service-page-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="service-page-title">Email Marketing</div>
+          <div class="service-page-desc">Strategic email campaigns that nurture your audience, drive conversions, and keep your brand top of mind.</div>
+          <div class="service-page-includes">
+            <span>Campaign creation &amp; copywriting</span>
+            <span>Subscriber list management</span>
+            <span>A/B testing &amp; optimization</span>
+            <span>Performance tracking &amp; reporting</span>
+          </div>
+          <div class="service-page-footer">
+            <a class="service-page-cta" href="ma&#105;lto&#58;sarmiento.iancarl20&#64;gmail.com?subject=Inquiry: Email Marketing">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Let&rsquo;s talk
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Ian Carl Sarmiento. All rights reserved.</span>
+      <div class="footer-socials">
+        <a class="social-link" href="https://www.facebook.com/icsrmnt" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/srmiento_/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/ian-carl-sarmiento-1b087b373/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a class="social-link" href="https://github.com/sarmientoiancarl" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a class="social-link" href="ma&#105;lto&#58;sarmiento.iancarl20&#64;gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a class="social-link" href="tel:+639687842557" aria-label="Phone">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.84 2.18 2 2 0 012.83 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

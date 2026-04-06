@@ -3,11 +3,7 @@ Website URL: https://sarmientoiancarl.github.io/portfolio/
 
 Things to do:
 
-- On desktop mode, add animation after clicking the back to top button and navigation button in my works section
-
-- Change the navicon for all pages
-
-- Add a Services section that clearly lists what you offer as a freelancer with a brief description and a starting price or "Let's talk" CTA per service
+- For the desktop mode navigation bar, group the nav links that jumps in different sections but in the same page so the users will know if they will redirect to another page or to a different section.
 
 - Add a contact form directly on the homepage instead of just an email link — lower friction for potential clients
 
