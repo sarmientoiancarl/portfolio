@@ -77,9 +77,32 @@
   const overlays  = document.querySelectorAll('.modal-overlay');
   if (!openBtns.length) return;
 
+  function buildDots(overlay) {
+    const slides = overlay.querySelectorAll('.modal-slide');
+    const dotsWrap = overlay.querySelector('.modal-dots');
+    if (!dotsWrap || !slides.length) return;
+    dotsWrap.innerHTML = '';
+    slides.forEach((_, i) => {
+      const d = document.createElement('span');
+      d.className = 'modal-dot' + (i === 0 ? ' active' : '');
+      d.addEventListener('click', () => goTo(overlay, i));
+      dotsWrap.appendChild(d);
+    });
+  }
+
+  function goTo(overlay, index) {
+    const slides = overlay.querySelectorAll('.modal-slide');
+    const dots   = overlay.querySelectorAll('.modal-dot');
+    slides.forEach((s, i) => s.classList.toggle('active', i === index));
+    dots.forEach((d, i)   => d.classList.toggle('active', i === index));
+    overlay.dataset.current = index;
+  }
+
   function openModal(id) {
     const el = document.getElementById(id);
     if (!el) return;
+    buildDots(el);
+    goTo(el, 0);
     el.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -100,12 +123,32 @@
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) closeAll();
     });
+
     const closeBtn = overlay.querySelector('.modal-close');
     if (closeBtn) closeBtn.addEventListener('click', closeAll);
+
+    const prevBtn = overlay.querySelector('.modal-arrow-prev');
+    const nextBtn = overlay.querySelector('.modal-arrow-next');
+    const total   = overlay.querySelectorAll('.modal-slide').length;
+
+    if (prevBtn) prevBtn.addEventListener('click', () => {
+      const cur = parseInt(overlay.dataset.current || 0);
+      goTo(overlay, (cur - 1 + total) % total);
+    });
+    if (nextBtn) nextBtn.addEventListener('click', () => {
+      const cur = parseInt(overlay.dataset.current || 0);
+      goTo(overlay, (cur + 1) % total);
+    });
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeAll();
+    const active = document.querySelector('.modal-overlay.active');
+    if (!active) return;
+    const total = active.querySelectorAll('.modal-slide').length;
+    const cur   = parseInt(active.dataset.current || 0);
+    if (e.key === 'ArrowLeft')  goTo(active, (cur - 1 + total) % total);
+    if (e.key === 'ArrowRight') goTo(active, (cur + 1) % total);
   });
 })();
 
