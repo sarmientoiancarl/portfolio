@@ -16,8 +16,6 @@ Things to do:
 
 - For the desktop mode navigation bar, group the nav links that jumps in different sections but in the same page so the users will know if they will redirect to another page or to a different section.
 
-- Add a contact form directly on the homepage instead of just an email link — lower friction for potential clients
+- Add a contact form directly on the homepage instead of just an email link. Do the same for other buttons that would contact me
 
 - Add copy to clipboard on your email and phone number in the Contact section
-
-- Make the modal image galleries on works.html navigable with left/right arrows instead of showing all 5 at once
