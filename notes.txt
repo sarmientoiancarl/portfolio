@@ -15,5 +15,3 @@ Things to do:
    - Also add this in the index.html My Works section with the same format as the others.
 
 - For the desktop mode navigation bar, group the nav links that jumps in different sections but in the same page so the users will know if they will redirect to another page or to a different section.
-
-- UPDATE: For the copy to clipboard, make it only an icon as big as the texts and put it beside. For the email, put it inside the button as well (email icon on the left side of text, copy icon on the right side). If the icon is clicked, copy the email—if the button is clicked, the default action. Do the same for the number (icon on the right side of text). Icon beside text, click the icon to copy.

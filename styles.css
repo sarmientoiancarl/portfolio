@@ -1046,46 +1046,26 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
 }
 .service-page-cta:hover { opacity: 0.85; transform: translateY(-1px); }
 .service-page-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; }
+
 /* ===================== COPY TO CLIPBOARD ===================== */
-.copy-btn {
+.copy-icon-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 0.75rem;
-  padding: 6px 14px;
-  border: 0.5px solid var(--border);
-  border-radius: 6px;
-  background: var(--bg-2);
-  color: var(--text-2);
-  font-size: 12px;
-  font-family: 'DM Sans', sans-serif;
+  justify-content: center;
+  margin-left: 6px;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  color: inherit;
+  opacity: 0.5;
+  transition: opacity 0.2s, color 0.2s;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
-.copy-btn:hover {
-  background: var(--accent-dim);
-  border-color: var(--accent);
-  color: var(--accent-text);
-}
-.copy-btn.copied {
-  border-color: var(--accent);
-  background: var(--accent-dim);
-  color: var(--accent-text);
-}
-.copy-btn svg {
-  width: 13px;
-  height: 13px;
+.copy-icon-btn:hover { opacity: 1; }
+.copy-icon-btn.copied { opacity: 1; color: var(--accent-text); }
+.copy-icon-btn svg {
+  width: 1em;
+  height: 1em;
   stroke: currentColor;
   fill: none;
   stroke-width: 1.5;
-}
-.contact-phone-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 0.75rem;
-}
-.contact-phone-row .contact-phone {
-  margin-top: 0;
 }

@@ -205,25 +205,23 @@
     });
   }
 })();
-/* ===================== COPY TO CLIPBOARD ===================== */
+
+/* ==================== COPY TO CLIPBOARD ==================== */
 (function () {
-  document.querySelectorAll('.copy-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+  document.querySelectorAll('.copy-icon-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       const text = btn.dataset.copy;
       navigator.clipboard.writeText(text).then(() => {
-        const copyIcon  = btn.querySelector('.copy-icon');
-        const checkIcon = btn.querySelector('.check-icon');
-        const label     = btn.querySelector('.copy-label');
-
+        const copyIcon  = btn.querySelector('.icon-copy');
+        const checkIcon = btn.querySelector('.icon-check');
         copyIcon.style.display  = 'none';
         checkIcon.style.display = 'block';
-        label.textContent       = 'Copied!';
         btn.classList.add('copied');
-
         setTimeout(() => {
           copyIcon.style.display  = 'block';
           checkIcon.style.display = 'none';
-          label.textContent       = 'Copy';
           btn.classList.remove('copied');
         }, 2000);
       });
