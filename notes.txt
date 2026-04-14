@@ -3,19 +3,6 @@ Website URL: https://sarmientoiancarl.github.io/portfolio/
 
 Things to do:
 
-- Create a new card in works.html.
+- Add the modals that are on works.html but not on index.html.
 
-   Standard Operating System (SOP) Creation.
-
-   - Include the following:
-      - Workflow diagram (high-level steps)
-      - 4-6 step process summary
-      - Key tools used
-      - Expected outputs
-      - Add a CTA: Request SOP
-
-   - I will provide 3 SOPs. It should be navigable with a left/right arrow just like the others, but a single page will include the ones instead of images/videos.
-
-   - Create placeholders for now. I will edit them once I have SOPs to add.
-   
-   - Also add this in the index.html My Works section with the same format as the others.
+- Create new images for the thumbnails. Keep it minimal.
