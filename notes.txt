@@ -3,6 +3,6 @@ Website URL: https://sarmientoiancarl.github.io/portfolio/
 
 Things to do:
 
-- Add the modals that are on works.html but not on index.html.
+- Add the modals that are on works.html but not on index.html
 
-- Create new images for the thumbnails. Keep it minimal.
+- Update the SVG of SOP Creation in works.html

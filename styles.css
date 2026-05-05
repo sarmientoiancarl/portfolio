@@ -335,6 +335,11 @@ nav {
   height: 170px; background: var(--bg-3);
   display: flex; align-items: center; justify-content: center;
 }
+.work-thumb svg {
+  width: 36px; height: 36px;
+  stroke: var(--text-3); fill: none;
+  stroke-width: 1.5; opacity: 0.4;
+}
 .work-thumb-label { font-size: 12px; color: var(--text-3); }
 .work-thumb img { width: 100%; height: 100%; object-fit: cover; }
 .work-body { padding: 1.25rem; }
@@ -463,6 +468,11 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
   width: 100%; background: var(--bg-3);
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
+}
+.grid-thumb svg {
+  width: 40px; height: 40px;
+  stroke: var(--text-3); fill: none;
+  stroke-width: 1.5; opacity: 0.35;
 }
 .grid-thumb.tall { height: 240px; }
 .grid-thumb.short { height: 180px; }
@@ -692,17 +702,19 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
 }
 .modal-img-wrap {
   width: 100%;
-  aspect-ratio: 0.8;
   border-radius: 10px;
   overflow: hidden;
   background: var(--bg-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.modal-img-wrap img { width: 100%; height: 100%; object-fit: contain; }
-.modal-img-placeholder {
-  width: 100%; height: 100%;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 6px; color: var(--text-3); font-size: 11px;
-  min-height: 260px;
+.modal-img-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
 }
 .modal-img-placeholder svg { width: 28px; height: 28px; stroke: var(--text-3); fill: none; opacity: 0.4; }
 
