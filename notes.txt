@@ -3,6 +3,4 @@ Website URL: https://sarmientoiancarl.github.io/portfolio/
 
 Things to do:
 
-- Add the modals that are on works.html but not on index.html
-
-- Update the SVG of SOP Creation in works.html
+- In the navigation bar, sort the pages that will only go to different sections and the pages that will go to different pages so the visitors will know whether they will go to another section or another page.
