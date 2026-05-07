@@ -1209,3 +1209,25 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
   .sop-arrow { display: none; }
   .sop-two-col { grid-template-columns: 1fr; }
 }
+
+/* ===================== NAV LINK GROUPS ===================== */
+.nav-links .nav-divider {
+  width: 1px;
+  height: 14px;
+  background: var(--border);
+  align-self: center;
+  flex-shrink: 0;
+}
+.nav-links a.nav-page-link::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-1px);
+  margin-left: 4px;
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+.nav-links a.nav-page-link:hover::after { opacity: 1; }

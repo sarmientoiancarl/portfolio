@@ -2,5 +2,3 @@
 Website URL: https://sarmientoiancarl.github.io/portfolio/
 
 Things to do:
-
-- In the navigation bar, sort the pages that will only go to different sections and the pages that will go to different pages so the visitors will know whether they will go to another section or another page.
