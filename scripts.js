@@ -255,9 +255,10 @@
     const img = e.target.closest('.modal-img-wrap img');
     if (img) {
       e.stopPropagation();
+      e.stopImmediatePropagation();
       openLightbox(img.src, img.alt);
     }
-  });
+  }, true); // capture phase — fires BEFORE the modal overlay's bubble-phase listener
 
   // Close via button or clicking the dark backdrop
   closeBtn.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });

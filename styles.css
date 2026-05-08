@@ -1235,3 +1235,40 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
 }
 .nav-links a.nav-page-link:hover::after { opacity: 1; }
 #exec-skills { background: var(--bg); }
+/* ===================== LIGHTBOX ===================== */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: zoom-out;
+}
+.lightbox-overlay.active { display: flex; }
+#lightboxImg {
+  max-width: 95%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); }
+.lightbox-close svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; }
+.modal-img-wrap img { cursor: zoom-in; }
