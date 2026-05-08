@@ -263,7 +263,7 @@ nav {
 .stat-label { font-size: 12px; color: var(--text-3); margin-top: 2px; }
 
 /* ===================== SKILLS ===================== */
-#skills { background: var(--bg); }
+#skills { background: var(--bg-2); }
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 3rem; }
 .skill-card {
   padding: 1.5rem;
@@ -295,7 +295,7 @@ nav {
 .skills-more:hover { border-color: var(--accent); }
 
 /* ===================== TOOLS ===================== */
-#tools { background: var(--bg-2); }
+#tools { background: var(--bg); }
 #tools .tools-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; }
 .tools-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 2.5rem; }
 .tool-pill {
@@ -311,7 +311,7 @@ nav {
 .tool-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); opacity: 0.6; }
 
 /* ===================== WORKS (index carousel) ===================== */
-#works { background: var(--bg); }
+#works { background: var(--bg-2); }
 .works-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; }
 .works-header a { font-size: 13px; color: var(--accent-text); display: inline-flex; align-items: center; gap: 4px; }
 .carousel-wrap { position: relative; }
@@ -367,7 +367,7 @@ nav {
 .carousel-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
 
 /* ===================== CONTACT ===================== */
-#contact { background: var(--bg); text-align: center; }
+#contact { background: var(--bg-2); text-align: center; }
 .contact-inner { max-width: 560px; margin: 0 auto; }
 .contact-desc { color: var(--text-2); margin-top: 1rem; margin-bottom: 2.5rem; font-size: 15px; }
 .contact-email {
@@ -609,7 +609,7 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
   .page-header-inner { flex-direction: column; align-items: flex-start; }
 }
 /* ===================== WORKSHOPS ===================== */
-#workshops { background: var(--bg); }
+#workshops { background: var(--bg-2); }
 .workshops-header { margin-bottom: 3rem; }
 .workshops-grid {
   display: grid;
@@ -873,7 +873,7 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
 }
 
 /* ===================== TESTIMONIALS ===================== */
-#testimonials { background: var(--bg-2); }
+#testimonials { background: var(--bg); }
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -932,7 +932,7 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
   transition: transform 0.1s ease, background 0.1s, border-color 0.1s;
 }
 /* ===================== SERVICES ===================== */
-#services { background: var(--bg-2); }
+#services { background: var(--bg); }
 .services-intro {
   display: flex;
   justify-content: space-between;
@@ -1234,3 +1234,4 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
   transition: opacity 0.2s;
 }
 .nav-links a.nav-page-link:hover::after { opacity: 1; }
+#exec-skills { background: var(--bg); }
