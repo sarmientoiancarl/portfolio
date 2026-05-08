@@ -228,3 +228,46 @@
     });
   });
 })();
+
+/* ===================== LIGHTBOX ===================== */
+(function () {
+  const overlay   = document.getElementById('lightbox');
+  const lightImg  = document.getElementById('lightboxImg');
+  const closeBtn  = document.getElementById('lightboxClose');
+  if (!overlay || !lightImg) return;
+
+  function openLightbox(src, alt) {
+    lightImg.src = src;
+    lightImg.alt = alt || '';
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    // Small delay so the image doesn't flash away before the overlay fades
+    setTimeout(() => { lightImg.src = ''; }, 200);
+  }
+
+  // Delegate — works for any img inside .modal-img-wrap, even dynamically added ones
+  document.addEventListener('click', (e) => {
+    const img = e.target.closest('.modal-img-wrap img');
+    if (img) {
+      e.stopPropagation();
+      openLightbox(img.src, img.alt);
+    }
+  });
+
+  // Close via button or clicking the dark backdrop
+  closeBtn.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeLightbox(); });
+
+  // Close with Escape key (stacks on top of existing Escape handler)
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      e.stopImmediatePropagation();
+      closeLightbox();
+    }
+  }, true); // capture phase so it fires before the modal Escape handler
+})();
