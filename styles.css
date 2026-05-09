@@ -111,6 +111,19 @@ nav {
 }
 .btn-cv:hover { background: var(--bg-3); border-color: var(--accent); }
 .btn-cv svg { width: 14px; height: 14px; stroke: currentColor; fill: none; }
+.btn-cv-download {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px;
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-2);
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.btn-cv-download:hover { background: var(--bg-3); border-color: var(--accent); }
+.btn-cv-download svg { width: 14px; height: 14px; stroke: currentColor; fill: none; }
 .theme-toggle {
   width: 34px; height: 34px; border-radius: 6px;
   border: 0.5px solid var(--border);
