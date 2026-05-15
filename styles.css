@@ -124,6 +124,25 @@ nav {
 }
 .btn-cv-download:hover { background: var(--bg-3); border-color: var(--accent); }
 .btn-cv-download svg { width: 14px; height: 14px; stroke: currentColor; fill: none; }
+.btn-cv-download { position: relative; }
+.btn-cv-download::after {
+  content: 'Download CV';
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-3);
+  color: var(--text);
+  font-size: 11px;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0.5px solid var(--border);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.btn-cv-download:hover::after { opacity: 1; }
 .theme-toggle {
   width: 34px; height: 34px; border-radius: 6px;
   border: 0.5px solid var(--border);
